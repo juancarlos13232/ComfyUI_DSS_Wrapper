@@ -1,0 +1,589 @@
+{
+    "id": "885f55c3-9c5c-479f-bce4-6555cda0623e",
+    "revision": 0,
+    "last_node_id": 13,
+    "last_link_id": 16,
+    "nodes": [
+        {
+            "id": 5,
+            "type": "ZImageLoRASaver",
+            "pos": [
+                1165,
+                -111
+            ],
+            "size": [
+                311.18515625,
+                58
+            ],
+            "flags": {},
+            "order": 8,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "lora",
+                    "type": "Z_IMAGE_LORA",
+                    "link": 5
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "Node name for S&R": "ZImageLoRASaver"
+            },
+            "widgets_values": [
+                "z_image_lora"
+            ]
+        },
+        {
+            "id": 2,
+            "type": "ZImageI2L",
+            "pos": [
+                685,
+                125
+            ],
+            "size": [
+                275.93125,
+                226
+            ],
+            "flags": {},
+            "order": 7,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "pipe",
+                    "type": "Z_IMAGE_PIPE",
+                    "link": 15
+                },
+                {
+                    "name": "image_1",
+                    "shape": 7,
+                    "type": "IMAGE",
+                    "link": 6
+                },
+                {
+                    "name": "image_2",
+                    "shape": 7,
+                    "type": "IMAGE",
+                    "link": 7
+                },
+                {
+                    "name": "image_3",
+                    "shape": 7,
+                    "type": "IMAGE",
+                    "link": 8
+                },
+                {
+                    "name": "image_4",
+                    "shape": 7,
+                    "type": "IMAGE",
+                    "link": 9
+                },
+                {
+                    "name": "image_5",
+                    "shape": 7,
+                    "type": "IMAGE",
+                    "link": 10
+                },
+                {
+                    "name": "image_6",
+                    "shape": 7,
+                    "type": "IMAGE",
+                    "link": 11
+                },
+                {
+                    "name": "image_7",
+                    "shape": 7,
+                    "type": "IMAGE",
+                    "link": null
+                },
+                {
+                    "name": "image_8",
+                    "shape": 7,
+                    "type": "IMAGE",
+                    "link": null
+                },
+                {
+                    "name": "image_9",
+                    "shape": 7,
+                    "type": "IMAGE",
+                    "link": null
+                },
+                {
+                    "name": "image_10",
+                    "shape": 7,
+                    "type": "IMAGE",
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "lora",
+                    "type": "Z_IMAGE_LORA",
+                    "links": [
+                        5,
+                        13
+                    ]
+                }
+            ],
+            "properties": {
+                "Node name for S&R": "ZImageI2L"
+            },
+            "widgets_values": []
+        },
+        {
+            "id": 13,
+            "type": "ZImageLoader",
+            "pos": [
+                41,
+                103
+            ],
+            "size": [
+                376.915625,
+                130
+            ],
+            "flags": {},
+            "order": 0,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "pipe",
+                    "type": "Z_IMAGE_PIPE",
+                    "links": [
+                        15,
+                        16
+                    ]
+                }
+            ],
+            "properties": {
+                "Node name for S&R": "ZImageLoader"
+            },
+            "widgets_values": [
+                "/mnt/models/huggingface/hub",
+                "cuda",
+                "bf16"
+            ]
+        },
+        {
+            "id": 12,
+            "type": "ZImageSampler",
+            "pos": [
+                1142,
+                122
+            ],
+            "size": [
+                400,
+                330
+            ],
+            "flags": {},
+            "order": 9,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "pipe",
+                    "type": "Z_IMAGE_PIPE",
+                    "link": 16
+                },
+                {
+                    "name": "lora",
+                    "shape": 7,
+                    "type": "Z_IMAGE_LORA",
+                    "link": 13
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "image",
+                    "type": "IMAGE",
+                    "links": [
+                        14
+                    ]
+                }
+            ],
+            "properties": {
+                "Node name for S&R": "ZImageSampler"
+            },
+            "widgets_values": [
+                "1 girl, beautiful Korean girl, (Cute Loose Bob hair), (wearing a cropped hoodie, capri sweatpants:1. 5), (hands in pockets:1. 5), (red lips:1. 3), (small breasts:1. 3), (toned stomach:1. 3), (eyelashes:1. 2), (aegyo sal:1. 2), beautiful detailed eyes, symmetrical eyes, (detailed face), immersive background, volumetric haze, global illumination, soft lighting, (flowing hair), (bright smile), natural lighting, (realistic:1.5), (lifelike:1.4), (4k, digital art, masterpiece), High detail digital painting, realistic, (top quality), (soft shadows), (best character art), ultra high resolution, highly detailed digital artwork, physically-based rendering, realism with an artistic touch, vibrant colors, f2.2 lens, soft palette, natural beauty.",
+                "泛黄，发绿，模糊，低分辨率，低质量图像，扭曲的肢体，诡异的外观，丑陋，AI感，噪点，网格感，JPEG压缩条纹，异常的肢体，水印，乱码，意义不明的字符",
+                704,
+                1280,
+                739901041769387,
+                "randomize",
+                25,
+                4,
+                8
+            ]
+        },
+        {
+            "id": 4,
+            "type": "PreviewImage",
+            "pos": [
+                2304.8160600000006,
+                120.88408000000005
+            ],
+            "size": [
+                669,
+                865
+            ],
+            "flags": {},
+            "order": 10,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "images",
+                    "type": "IMAGE",
+                    "link": 14
+                }
+            ],
+            "outputs": [],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.11.0",
+                "Node name for S&R": "PreviewImage"
+            },
+            "widgets_values": []
+        },
+        {
+            "id": 8,
+            "type": "LoadImage",
+            "pos": [
+                1972.3353600000005,
+                114.98300999999995
+            ],
+            "size": [
+                282.798828125,
+                314.00000000000006
+            ],
+            "flags": {},
+            "order": 1,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": [
+                        10
+                    ]
+                },
+                {
+                    "name": "MASK",
+                    "type": "MASK",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.11.0",
+                "Node name for S&R": "LoadImage"
+            },
+            "widgets_values": [
+                "paralaif_woman_with_a_tank_top_smoking_a_ciggarrete_dark_ambi_4b71b461-4a2e-4097-bc2e-f35f4fcb4b56_1.png",
+                "image"
+            ]
+        },
+        {
+            "id": 9,
+            "type": "LoadImage",
+            "pos": [
+                1660.574513636364,
+                108.65324818181817
+            ],
+            "size": [
+                282.798828125,
+                314
+            ],
+            "flags": {},
+            "order": 2,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": [
+                        11
+                    ]
+                },
+                {
+                    "name": "MASK",
+                    "type": "MASK",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.11.0",
+                "Node name for S&R": "LoadImage"
+            },
+            "widgets_values": [
+                "paralaif_fat_youn_boy_playing_with_a_ball_blue_eyes_hat_dark__cc3060bd-4256-48ce-b99f-d7ff9072cd6d_0.png",
+                "image"
+            ]
+        },
+        {
+            "id": 7,
+            "type": "LoadImage",
+            "pos": [
+                1962.363170000001,
+                484.67388000000005
+            ],
+            "size": [
+                282.798828125,
+                314.00000000000006
+            ],
+            "flags": {},
+            "order": 3,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": [
+                        7
+                    ]
+                },
+                {
+                    "name": "MASK",
+                    "type": "MASK",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.11.0",
+                "Node name for S&R": "LoadImage"
+            },
+            "widgets_values": [
+                "paralaif_black_monster_alien_thin_with_black_eyes_dark_ambien_d710ac8b-6da2-487b-a661-fccc36f09637_3.png",
+                "image"
+            ]
+        },
+        {
+            "id": 11,
+            "type": "LoadImage",
+            "pos": [
+                1629.7758499999995,
+                476.55178999999964
+            ],
+            "size": [
+                282.798828125,
+                314.00000000000006
+            ],
+            "flags": {},
+            "order": 4,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": [
+                        9
+                    ]
+                },
+                {
+                    "name": "MASK",
+                    "type": "MASK",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.11.0",
+                "Node name for S&R": "LoadImage"
+            },
+            "widgets_values": [
+                "paralaif_close_up_of_a_young_male_seated_in_the_street_saw_fo_4a3125d7-f928-433e-abcf-6e1001a8a88f_1.png",
+                "image"
+            ]
+        },
+        {
+            "id": 10,
+            "type": "LoadImage",
+            "pos": [
+                1959.3276100000007,
+                863.8408000000002
+            ],
+            "size": [
+                282.798828125,
+                314
+            ],
+            "flags": {},
+            "order": 5,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": [
+                        8
+                    ]
+                },
+                {
+                    "name": "MASK",
+                    "type": "MASK",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.11.0",
+                "Node name for S&R": "LoadImage"
+            },
+            "widgets_values": [
+                "paralaif_anime_girl_in_a_dark_alley_junji_ito_style_--seed_21_0d6b1aca-9bb1-4557-a384-ab486eaba7a0_2.png",
+                "image"
+            ]
+        },
+        {
+            "id": 6,
+            "type": "LoadImage",
+            "pos": [
+                1640.96286,
+                854.7001400000007
+            ],
+            "size": [
+                282.798828125,
+                314
+            ],
+            "flags": {},
+            "order": 6,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": [
+                        6
+                    ]
+                },
+                {
+                    "name": "MASK",
+                    "type": "MASK",
+                    "links": null
+                }
+            ],
+            "properties": {
+                "cnr_id": "comfy-core",
+                "ver": "0.11.0",
+                "Node name for S&R": "LoadImage"
+            },
+            "widgets_values": [
+                "paralaif_a_man_in_dark_hospital_room_man_is_bald_--sref_31416_4b96f630-cd8e-4a57-9fbb-363f0387ebbe_0.png",
+                "image"
+            ]
+        }
+    ],
+    "links": [
+        [
+            5,
+            2,
+            0,
+            5,
+            0,
+            "Z_IMAGE_LORA"
+        ],
+        [
+            6,
+            6,
+            0,
+            2,
+            1,
+            "IMAGE"
+        ],
+        [
+            7,
+            7,
+            0,
+            2,
+            2,
+            "IMAGE"
+        ],
+        [
+            8,
+            10,
+            0,
+            2,
+            3,
+            "IMAGE"
+        ],
+        [
+            9,
+            11,
+            0,
+            2,
+            4,
+            "IMAGE"
+        ],
+        [
+            10,
+            8,
+            0,
+            2,
+            5,
+            "IMAGE"
+        ],
+        [
+            11,
+            9,
+            0,
+            2,
+            6,
+            "IMAGE"
+        ],
+        [
+            13,
+            2,
+            0,
+            12,
+            1,
+            "Z_IMAGE_LORA"
+        ],
+        [
+            14,
+            12,
+            0,
+            4,
+            0,
+            "IMAGE"
+        ],
+        [
+            15,
+            13,
+            0,
+            2,
+            0,
+            "Z_IMAGE_PIPE"
+        ],
+        [
+            16,
+            13,
+            0,
+            12,
+            0,
+            "Z_IMAGE_PIPE"
+        ]
+    ],
+    "groups": [],
+    "config": {},
+    "extra": {
+        "workflowRendererVersion": "LG",
+        "ds": {
+            "scale": 0.620921323059155,
+            "offset": [
+                1429.1728659957885,
+                389.6512081759751
+            ]
+        },
+        "frontendVersion": "1.37.11",
+        "VHS_latentpreview": false,
+        "VHS_latentpreviewrate": 0,
+        "VHS_MetadataImage": true,
+        "VHS_KeepIntermediate": true
+    },
+    "version": 0.4
+}
