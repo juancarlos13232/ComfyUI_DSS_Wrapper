@@ -1,0 +1,15 @@
+transformers>=4.56.1
+imageio
+imageio[ffmpeg]
+safetensors
+einops
+sentencepiece
+protobuf
+modelscope>=1.11.0
+ftfy
+pandas
+accelerate
+peft
+datasets
+matplotlib>=3.10.8
+diffsynth
