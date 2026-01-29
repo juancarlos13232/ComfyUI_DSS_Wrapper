@@ -56,7 +56,6 @@ The suite consists of three main nodes:
 *   **Filename Prefix**: Prefix for the saved `.safetensors` file.
 *   Saves the converted LoRA to your ComfyUI output directory. Use this if you want to reuse the style/character transfer without re-computing the `I2L` step.
 ---
-
 ## 📘 Documentation
 
 Additional documentation is available in the `docs/` folder:
@@ -74,3 +73,4 @@ Additional documentation is available in the `docs/` folder:
   Example configuration file showing safe, user-editable settings.
 
 New users are strongly encouraged to read these files before using the nodes.
+
