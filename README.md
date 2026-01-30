@@ -55,3 +55,23 @@ The suite consists of three main nodes:
 *   **LoRA**: Input connection from the `Z-Image I2L` node.
 *   **Filename Prefix**: Prefix for the saved `.safetensors` file.
 *   Saves the converted LoRA to your ComfyUI output directory. Use this if you want to reuse the style/character transfer without re-computing the `I2L` step.
+---
+## 📘 Documentation
+
+Additional documentation is available in the `docs/` folder:
+
+- **Overview**  
+  `docs/overview.md`  
+  Explains what this project does, why it exists, and what has been improved.
+
+- **Installation Paths**  
+  `docs/install_paths.md`  
+  Shows exactly where to place this repository, models, and related files on your system.
+
+- **User Configuration**  
+  `docs/user_config.json`  
+  Example configuration file showing safe, user-editable settings.
+
+New users are strongly encouraged to read these files before using the nodes.
+
+
